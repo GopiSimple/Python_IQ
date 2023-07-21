@@ -1,0 +1,16 @@
+Declarations:
+images_extensions=[jpeg,..]
+Document_extensions=[docx,…]
+media_extensions=[mp3,…]
+
+Functions:
+- UploadToS3() : https://froala.com/wysiwyg-editor/docs/sdks/python/image-s3-upload/
+- UploadToGoogleCloud(): https://www.skytowner.com/explore/uploading_files_on_google_cloud_storage_using_python
+
+Main:
+1. Get current directory
+2. List of files= Get the files recursively: os.walk('dir_path'): Recursively get the list all files in directory and subdirectories.
+3. If file extension in images_extensions or file extension in media_extensions
+          - uploadToS3()
+4. If file extension in Document_extensions 
+           - uploadToGoogleCloud()
